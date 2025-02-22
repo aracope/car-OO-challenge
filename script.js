@@ -36,6 +36,24 @@ class Vehicle {
 // myFirstCar.honk();     // "Beep."
 // myFirstCar.numWheels;  // 4
 
+class Car extends Vehicle {
+    constructor(make, model, year) {
+      super(make, model, year);
+      this.numWheels = 4;
+
+    }
+}
+
+// Create a class for a Motorcycle. This class should inherit from Vehicle and each motorcycle instance should have a property called numWheels which has a value of 2. It should also have a revEngine method which returns “VROOM!!!”
+
+// let myFirstMotorcycle = new Motorcycle("Honda", "Nighthawk", 2000);
+
+// myFirstMotorcycle.toString();
+// // "The vehicle is a Honda Nighthawk from 2000."
+
+// myFirstMotorcycle.honk();     // "Beep."
+// myFirstMotorcycle.revEngine(); // "VROOM!!!"
+// myFirstMotorcycle.numWheels;  // 2
 
 
 
@@ -45,18 +63,6 @@ class Vehicle {
 
 
 
-
-
-
-
-let myFirstMotorcycle = new Motorcycle("Honda", "Nighthawk", 2000);
-
-myFirstMotorcycle.toString();
-// "The vehicle is a Honda Nighthawk from 2000."
-
-myFirstMotorcycle.honk();     // "Beep."
-myFirstMotorcycle.revEngine(); // "VROOM!!!"
-myFirstMotorcycle.numWheels;  // 2
 
 let garage = new Garage(2);
 garage.vehicles; // []
